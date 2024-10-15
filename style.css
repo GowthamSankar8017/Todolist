@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(3, 3, 4);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    
+}
+.container:hover{
+    transform: scale(1.1);
+}
+h1{
+    margin-bottom: 20px;
+    color: whitesmoke;
+
+}
+#taskinput{
+   padding: 10px;
+   width: 80%;   
+   margin-bottom: 25px;
+}
+#taskinput:focus{
+    outline: none;
+    border: none;
+}
+#addbtn{
+    padding: 8px 16px;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+#addbtn:hover{
+    background-color: darkgreen;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+  
+}
+li{
+    background-color: rgb(237, 246, 243);
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(28, 5, 235);
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 20px;
+}
+li.strike{
+    text-decoration: line-through;
+    color: rgb(11, 11, 11);
+}
+.deletebtn{
+    padding: 8px 16px;
+    background-color:red;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width:1280px){
+    .container{
+       max-width: 900px;
+       width: 100%;
+    }
+}
+
+
+@media (max-width:1024px){
+    .container{
+       max-width: 800px;
+       width: 100%;
+    }
+}
+
+
+ @media (max-width:960px){
+    .container{
+       max-width: 600px;
+       width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+       max-width: 500px;
+       width: 100%;
+    }
+}
+
+@media (max-width:460px){
+    .container{
+       max-width: 330px;
+       width: 100%;
+    }
+}
